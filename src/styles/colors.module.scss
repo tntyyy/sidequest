@@ -1,0 +1,15 @@
+$colors: (
+        "primary": #0659A5,
+        "secondary": #000000,
+);
+
+@function getColorVarValue($name) {
+  @return map-get($colors, $name);
+}
+
+//export all $colors to js like object {PRIMARY: string, SECONDARY: string....}
+:export {
+  @each $color, $value in $colors {
+    #{to-upper-case(unquote($color))}: $value;
+  }
+}

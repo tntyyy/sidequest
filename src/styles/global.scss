@@ -1,0 +1,66 @@
+@import "imports.module";
+@import "shared.module";
+
+:root {
+  --colors__primary: #{getColorVarValue("primary")};
+  --colors__secondary: #{getColorVarValue("secondary")};
+}
+
+html {
+  font-size: 62.5%; /* 62.5% of 16px = 10px */
+  background-color: #F4F4F4;
+  scroll-behavior: smooth;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+body {
+  color: var(--colors__primary);
+
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+:global(#__next) {
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
+}
+
+:where(button, input, select, textarea) {
+  padding: 0;
+  border: 0;
+}
+
+:where(h1, h2, h3, h4, h5, h6, p) {
+  margin: 0;
+}
+
+:where(ul, ol) {
+  margin: 0;
+  padding: 0;
+}
+
+:where(a) {
+  text-decoration: none;
+}
+
+:where(svg) {
+  fill: currentcolor;
+}
+
+:where(img) {
+  object-fit: contain;
+}
+
+:where(hr) {
+  height: 1px;
+  border: none;
+}
+
+input[type="number"] {
+  appearance: textfield;
+}

@@ -1,0 +1,30 @@
+.header {
+  margin-top: 4rem;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.navigation {
+  display: flex;
+  align-items: center;
+  gap: 1.4rem;
+}
+
+.link {
+  font-size: 1.6rem;
+
+  &__active {
+    border-bottom: 2px solid var(--colors__primary);
+  }
+}
+
+.button {
+  font-size: 1.6rem;
+
+  padding: 1rem 1.6rem;
+
+  border: 2px solid var(--colors__primary);
+  border-radius: 3rem;
+}

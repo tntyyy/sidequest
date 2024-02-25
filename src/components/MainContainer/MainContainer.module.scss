@@ -1,0 +1,13 @@
+@import "../../styles/shared.module";
+
+.wrapper {
+  max-width: 128rem;
+  width: 100%;
+
+  margin: 0 auto;
+
+  @include media-breakpoint-down(xl) {
+    max-width: unset;
+    padding: 0 2rem;
+  }
+}
