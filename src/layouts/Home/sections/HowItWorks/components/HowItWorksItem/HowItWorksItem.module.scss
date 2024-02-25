@@ -1,0 +1,50 @@
+.wrapper {
+  width: 100%;
+
+  display: flex;
+  align-items: flex-start;
+  gap: 5rem;
+
+  flex-direction: row;
+}
+
+.reversed {
+  flex-direction: row-reverse;
+}
+
+.image {
+  width: 350px;
+  height: 350px;
+
+  border: 1px solid var(--colors__primary);
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.step {
+  font-size: 2.4rem;
+  padding: 1rem 1.5rem;
+  border: 1px solid var(--colors__primary);
+}
+
+.title {
+  font-size: 2.4rem;
+}
+
+.description {
+  font-size: 1.6rem;
+}

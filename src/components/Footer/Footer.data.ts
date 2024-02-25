@@ -1,4 +1,4 @@
-export const headerData = [
+export const footerData = [
     {
         id: 1,
         path: '/',

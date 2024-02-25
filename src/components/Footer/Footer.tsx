@@ -1,18 +1,18 @@
-import styles from "./Header.module.scss";
+import styles from './Footer.module.scss';
 import Logo from '@/src/components/ui/Logo/Logo';
-import {headerData} from '@/src/components/Header/Header.data';
 import Link from 'next/link';
 import classNames from 'classnames';
 import {useRouter} from 'next/router';
+import {footerData} from '@/src/components/Footer/Footer.data';
 
-const Header = () => {
+const Footer = () => {
     const router = useRouter();
 
     return (
-        <header className={styles.header}>
+        <footer className={styles.wrapper}>
             <Logo />
             <div className={styles.navigation}>
-                {headerData.map((item) => {
+                {footerData.map((item) => {
                     return (
                         <Link
                             key={item.id}
@@ -26,9 +26,8 @@ const Header = () => {
                     );
                 })}
             </div>
-            <Link className={styles.button} href={'/botlink'}>Try SideKick Bot</Link>
-        </header>
+        </footer>
     );
 };
 
-export default Header;
+export default Footer;
