@@ -13,8 +13,8 @@ import Footer from '@/src/components/Footer/Footer';
 const Home = () => {
     return (
         <>
+            <Header />
             <MainContainer>
-                <Header />
                 <Intro />
                 <Platforms />
                 <EscrowService />
