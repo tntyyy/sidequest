@@ -1,42 +1,35 @@
-export const platformsData = [
+export const platformsDataLogin = [
     {
         id: 1,
-        text: 'Login via Discord',
+        text: 'Discord',
         href: '/discord',
     },
     {
         id: 2,
-        text: 'Login via Discord',
+        text: 'Telegram',
         href: '/discord',
+    },
+];
+
+export const platformDataBrowser = [
+    {
+        id: 1,
+        text: 'Chrome',
+        href: '/chrome',
+    },
+    {
+        id: 2,
+        text: 'Safari',
+        href: '/safari',
     },
     {
         id: 3,
-        text: 'Login via Discord',
-        href: '/discord',
+        text: 'Opera',
+        href: '/opera',
     },
     {
         id: 4,
-        text: 'Login via Discord',
-        href: '/discord',
-    },
-    {
-        id: 5,
-        text: 'Login via Discord',
-        href: '/discord',
-    },
-    {
-        id: 6,
-        text: 'Login via Discord',
-        href: '/discord',
-    },
-    {
-        id: 7,
-        text: 'Login via Discord',
-        href: '/discord',
-    },
-    {
-        id: 8,
-        text: 'Login via Discord',
-        href: '/discord',
+        text: 'Edge',
+        href: '/edge',
     },
 ]

@@ -1,0 +1,45 @@
+.list__item {
+  position: relative;
+
+  font-size: 1.8rem;
+  color: #EBEBEB;
+  padding: 1rem 2rem;
+
+  background: #161616;
+  border: 1px solid #212121;
+
+  border-radius: 13px;
+
+  transition: all 0.2s ease-in-out;
+
+  min-width: 12.5rem;
+  text-align: center;
+
+  &:hover {
+    background: #FFD100;
+    color: #000000;
+
+    svg {
+      visibility: visible;
+      opacity: 1;
+    }
+  }
+
+  svg {
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    visibility: hidden;
+    opacity: 0;
+
+    transition: all 0.2s ease-in-out;
+
+    z-index: 1;
+  }
+
+  span {
+    position: relative;
+    z-index: 3;
+  }
+}

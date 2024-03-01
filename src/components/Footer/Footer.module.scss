@@ -1,26 +1,7 @@
-.wrapper {
+.footer {
   width: 100%;
-
-  padding: 5rem 2.5rem;
-
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-
-  background-color: var(--colors__primary);
 }
 
-.navigation {
-  display: flex;
-  align-items: center;
-  gap: 1.4rem;
-}
-
-.link {
-  font-size: 1.6rem;
-  color: var(--colors__secondary);
-
-  &__active {
-    border-bottom: 2px solid var(--colors__secondary);
-  }
+.image {
+  width: 100%;
 }
