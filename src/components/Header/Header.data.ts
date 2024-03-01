@@ -24,9 +24,4 @@ export const headerData = [
         path: '/marketplace',
         content: 'Marketplace',
     },
-    {
-        id: 6,
-        path: '/contacts',
-        content: 'Contacts',
-    },
 ];

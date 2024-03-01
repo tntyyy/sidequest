@@ -1,11 +1,13 @@
 import React from 'react';
-import styles from './Logo.module.scss';
+import Image from 'next/image';
+import logo from '../../../../public/assets/icons/logo.svg';
+import Link from 'next/link';
 
 const Logo = () => {
     return (
-        <div className={styles.logo}>
-            LOGO
-        </div>
+        <Link href={'/'}>
+            <Image src={logo} alt={'SideQuest'} />
+        </Link>
     );
 };
 

@@ -12,19 +12,17 @@ import Footer from '@/src/components/Footer/Footer';
 
 const Home = () => {
     return (
-        <>
+        <MainContainer>
             <Header />
-            <MainContainer>
-                <Intro />
-                <Platforms />
-                <EscrowService />
-                <Steps />
-                <HowItWorks />
-                <SocialMedia />
-                <Contacts />
-            </MainContainer>
+            <Intro />
+            <Platforms />
+            <EscrowService />
+            <Steps />
+            <HowItWorks />
+            <SocialMedia />
+            <Contacts />
             <Footer />
-        </>
+        </MainContainer>
     );
 };
 
