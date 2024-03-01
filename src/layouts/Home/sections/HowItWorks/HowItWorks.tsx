@@ -33,7 +33,7 @@ const HowItWorks = () => {
                         <div className={styles.item__text}>
                             <h5 className={styles.title}>Select & Secure</h5>
                             <p className={styles.description}>
-                                Choose your playmate and secure your session with our blockchain escrow service. Funds are held until you confirm the game's completionz
+                                Choose your playmate and secure your session with our blockchain escrow service. Funds are held until you confirm the game&apos;s completionz
                             </p>
                             <Link href={'/'} className={styles.link}>
                                 <PixelArrow />
@@ -45,7 +45,7 @@ const HowItWorks = () => {
                         <div className={styles.item__text}>
                             <h5 className={styles.title}>Play & Pay</h5>
                             <p className={styles.description}>
-                                Enjoy your gaming session knowing your transaction is safe. Complete the game and release the funds directly to your playmate's wallet.
+                                Enjoy your gaming session knowing your transaction is safe. Complete the game and release the funds directly to your playmate&apos;s wallet.
                             </p>
                             <Link href={'/'} className={styles.link}>
                                 <PixelArrow />
