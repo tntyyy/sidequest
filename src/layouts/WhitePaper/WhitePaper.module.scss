@@ -1,0 +1,21 @@
+.wrapper {
+  max-width: 69.6rem;
+
+  display: flex;
+  flex-direction: column;
+  gap: 3.2rem;
+  align-items: flex-start;
+}
+
+.title {
+  font-size: 4.8rem;
+}
+
+.description {
+  opacity: 0.8;
+  line-height: 2.4rem;
+}
+
+.subtitle {
+  font-size: 2.6rem;
+}
