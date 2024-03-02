@@ -1,18 +1,18 @@
-import WhitePaper from '@/src/layouts/News/News';
 import classNames from 'classnames';
 import {Montserrat, Noto_Sans} from 'next/font/google';
 import localFont from 'next/font/local';
+import News from '@/src/layouts/News/News';
 
 const notoFont = Noto_Sans({ subsets: ["latin"], variable: '--font-noto' });
 const montFont = Montserrat({ subsets: ["latin"], variable: '--font-mont' });
 const pixeloid = localFont({
     src: [
         {
-            path: '../public/fonts/PixeloidSans.ttf',
+            path: '../../public/fonts/PixeloidSans.ttf',
             weight: '400'
         },
         {
-            path: '../public/fonts/PixeloidSans-Bold.ttf',
+            path: '../../public/fonts/PixeloidSans-Bold.ttf',
             weight: '700'
         }
     ],
@@ -22,7 +22,7 @@ const pixeloid = localFont({
 const NewsPage = () => {
     return (
         <div className={classNames(montFont.className, pixeloid.variable, notoFont.variable )}>
-            <WhitePaper />
+            <News />
         </div>
     );
 }
