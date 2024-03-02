@@ -1,0 +1,58 @@
+.wrapper {
+  width: 100%;
+
+  padding: 2.4rem;
+
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+
+  background-color: #161616;
+  border: 1px solid #212121;
+  border-radius: 27px;
+
+  transition: background-color 0.2s ease-in-out;
+
+  &:hover {
+    background-color: #212121;
+  }
+}
+
+.image {
+  width: 100%;
+}
+
+.content {
+  width: 100%;
+
+  display: flex;
+  flex-direction: column;
+  gap: 3.2rem;
+
+  color: #FFFFFF;
+}
+
+.title {
+  font-size: 2.6rem;
+  font-weight: 700;
+}
+
+.description {
+  font-size: 1.6rem;
+  opacity: 0.8;
+}
+
+.link {
+  font-size: 1.8rem;
+  color: #FFD100;
+  text-decoration: underline;
+}
+
+.date {
+  background-color: #302D2C;
+  border-radius: 40px;
+
+  padding: 12px 18px;
+
+  align-self: flex-start;
+}
