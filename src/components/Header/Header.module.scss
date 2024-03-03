@@ -1,7 +1,9 @@
+@import "../../styles/shared.module";
+
 .header {
   position: sticky;
   top: 20px;
-  z-index: 999;
+  z-index: 99;
 
   padding: 0.9rem 1rem;
 
@@ -14,12 +16,21 @@
   border-radius: 1000px;
 
   font-family: var(--font-noto);
+
+  @include media-breakpoint-down(xl) {
+    padding: 0.9rem 2rem;
+
+  }
 }
 
 .navigation {
   display: flex;
   align-items: center;
   gap: 2.8rem;
+
+  @media (max-width: 1200px) {
+    display: none; // Скрываем навигацию на мобильном экране
+  }
 }
 
 .link {
@@ -34,44 +45,79 @@
   }
 }
 
-.button {
-  overflow: hidden;
-  position: relative;
-  font-size: 1.6rem;
-  color: #2C2C2C;
-
-  padding: 1.55rem 1.8rem;
-
-  background-color: #FFFFFF;
-  border-radius: 3rem;
-
-  transition: all 0.2s ease-in-out;
-
-  &:hover {
-    background-color: #FFD100;
-
-    svg {
-      visibility: visible;
-      opacity: 1;
-    }
+.bot__button {
+  @media (max-width: 1200px) {
+    display: none; // Скрываем навигацию на мобильном экране
   }
+}
+
+.burger__menu {
+  display: none; // Скрытое бургер-меню на десктопе
+
+  @media (max-width: 1200px) {
+    display: flex;
+    flex-direction: column;
+    gap: 0.6rem;
+    cursor: pointer;
+  }
+}
+
+.menu__item {
+  background: #FFD100;
+  width: 3rem;
+  height: 0.4rem;
+
+  border-radius: 17px;
+}
+
+.fullscreen__menu {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: #000000;
+  display: flex;
+  flex-direction: column;
+  z-index: 100;
+
+  padding: 2rem 2rem;
+}
+
+.menu__header {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.close {
+  font-family: var(--font-pixel);
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
 
   span {
-    position: relative;
-    z-index: 2;
+    font-size: 3.6rem;
+    line-height: 100%;
+    color: #FFD100;
   }
+}
 
-  svg {
-    visibility: hidden;
-    opacity: 0;
-    transition: all 0.2s ease-in-out;
+.menu__icon {
+  color: #FFFFFF;
+  font-size: 2rem;
+
+  @media (min-width: 1201px) {
+    display: none;
   }
+}
 
-  svg {
-    position: absolute;
-    left: 0;
-    top: 0;
+.menu__nav {
+  margin-top: 3rem;
 
-    z-index: 1;
-  }
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
 }

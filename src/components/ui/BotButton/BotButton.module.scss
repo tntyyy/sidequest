@@ -1,0 +1,41 @@
+.button {
+  overflow: hidden;
+  position: relative;
+  font-size: 1.6rem;
+  color: #2C2C2C;
+
+  padding: 1.55rem 1.8rem;
+
+  background-color: #FFFFFF;
+  border-radius: 3rem;
+
+  transition: all 0.2s ease-in-out;
+
+  &:hover {
+    background-color: #FFD100;
+
+    svg {
+      visibility: visible;
+      opacity: 1;
+    }
+  }
+
+  span {
+    position: relative;
+    z-index: 2;
+  }
+
+  svg {
+    visibility: hidden;
+    opacity: 0;
+    transition: all 0.2s ease-in-out;
+  }
+
+  svg {
+    position: absolute;
+    left: 0;
+    top: 0;
+
+    z-index: 1;
+  }
+}
