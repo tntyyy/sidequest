@@ -1,3 +1,5 @@
+@import "../../../../styles/shared.module";
+
 .wrapper {
   position: relative;
 
@@ -15,6 +17,17 @@
 
   margin-top: 2rem;
   margin-bottom: 17rem;
+
+  @include media-breakpoint-down(xl) {
+    overflow: clip;
+  }
+
+  @include media-breakpoint-down(880px) {
+    padding: 4rem;
+    height: auto;
+
+    margin-bottom: 4rem;
+  }
 }
 
 .content {
@@ -30,6 +43,10 @@
   font-family: var(--font-pixel);
   font-size: 4.8rem;
   font-weight: 700;
+
+  @include media-breakpoint-down(550px) {
+    font-size: 3.6rem;
+  }
 }
 
 .description {
@@ -38,6 +55,10 @@
 
   font-size: 2rem;
   opacity: 0.7;
+
+  @include media-breakpoint-down(550px) {
+    font-size: 1.6rem;
+  }
 }
 
 .link {
@@ -60,6 +81,12 @@
     background: #212121;
     color: #FFD100;
   }
+
+  @include media-breakpoint-down(880px) {
+    width: 100%;
+    padding: 1.35rem 0;
+    text-align: center;
+  }
 }
 
 .bg {
@@ -67,6 +94,10 @@
 
   top: 1rem;
   right: 1rem;
+
+  @include media-breakpoint-down(xl) {
+    display: none;
+  }
 }
 
 .game {
@@ -81,5 +112,9 @@
 
   left: 7rem;
   top: 0;
+
+  @include media-breakpoint-down(880px) {
+    display: none;
+  }
 }
 

@@ -1,8 +1,14 @@
+@import "../../styles/shared.module";
+
 .layout {
   display: flex;
   gap: 2rem;
   margin-top: 2rem;
   margin-bottom: 7rem;
+
+  @include media-breakpoint-down(1200px) {
+    flex-direction: column;
+  }
 }
 
 .sidebar {
@@ -13,8 +19,21 @@
   overflow: auto;
   position: sticky;
   top: 104px;
+
+  @include media-breakpoint-down(1200px) {
+    width: 100%;
+
+    height: unset;
+    min-height: unset;
+
+    position: unset;
+  }
 }
 
 .main {
   width: 65%;
+
+  @include media-breakpoint-down(1200px) {
+    width: 100%;
+  }
 }

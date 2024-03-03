@@ -63,6 +63,7 @@ const Header = () => {
                             );
                         })}
                     </div>
+                    <BotButton className={styles.bot__mobile} />
                 </div>
             )}
         </>
