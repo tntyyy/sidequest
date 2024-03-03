@@ -46,12 +46,20 @@ const Team = () => {
             <div className={styles.slider}>
                 <Swiper
                     onSwiper={onSwiperInitHandler}
-                    slidesPerView={3}
+                    slidesPerView={'auto'}
                     spaceBetween={32}
                     tag="div"
                     preventInteractionOnTransition={true}
                     watchSlidesProgress={true}
                     onResize={onSwiperResizeHandler}
+                    breakpoints={{
+                        1380: {
+                           slidesPerView: 3,
+                        },
+                        992: {
+                            slidesPerView: 3,
+                        },
+                    }}
                 >
                     {
                         teamData.map((item) => {

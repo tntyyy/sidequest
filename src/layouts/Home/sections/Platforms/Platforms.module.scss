@@ -1,3 +1,5 @@
+@import "../../../../styles/shared.module";
+
 .wrapper {
   width: 100%;
 
@@ -11,6 +13,13 @@
   border: 1px solid #212121;
   border-radius: 18px;
 
+  @include media-breakpoint-down(1120px) {
+    flex-direction: column;
+  }
+
+  @include media-breakpoint-down(670px) {
+    padding: 2rem 2.8rem 2rem;
+  }
 }
 
 .content {
@@ -40,6 +49,10 @@
   display: flex;
   align-items: center;
   gap: 1rem;
+
+  @include media-breakpoint-down(670px) {
+    flex-wrap: wrap;
+  }
 }
 
 .image {
@@ -47,4 +60,8 @@
 
   display: flex;
   justify-content: center;
+
+  @include media-breakpoint-down(670px) {
+    display: none;
+  }
 }

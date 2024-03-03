@@ -1,3 +1,5 @@
+@import "../../../../styles/shared.module";
+
 .wrapper {
   width: 100%;
 
@@ -24,6 +26,12 @@
   padding-right: 3.2rem;
 }
 
+.image {
+  @include media-breakpoint-down(xl) {
+    display: none;
+  }
+}
+
 .description {
   max-width: 37.1rem;
   font-size: 1.6rem;
@@ -37,6 +45,12 @@
   display: flex;
   align-items: center;
   gap: 0.8rem;
+
+  @include media-breakpoint-down(xl) {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1.5rem;
+  }
 }
 
 .link {
@@ -59,6 +73,13 @@
     background: #FFD100;
     color: #161616;
   }
+
+  @include media-breakpoint-down(xl) {
+    width: 100%;
+    text-align: center;
+
+    font-size: 1.4rem;
+  }
 }
 
 .email {
@@ -70,5 +91,11 @@
   &:hover {
     background: #2B2B2B;
     color: #FFD100;
+  }
+
+  @include media-breakpoint-down(xl) {
+    width: 100%;
+    text-align: center;
+    padding: 0;
   }
 }

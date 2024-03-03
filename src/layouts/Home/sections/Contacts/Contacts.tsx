@@ -14,7 +14,7 @@ const Contacts = () => {
                         Email us for any inquiries or support. We aim to respond within 24 hours
                     </p>
                 </div>
-                <Image src={contactsImage} alt={'Contacts'} />
+                <Image src={contactsImage} alt={'Contacts'} className={styles.image} />
             </div>
             <div className={styles.footer}>
                 <a href='mailto:support@sidekickgaming.com' className={classNames(styles.link, styles.email)}>support@sidekickgaming.com</a>
