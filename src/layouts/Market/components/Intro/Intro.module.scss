@@ -1,0 +1,85 @@
+.wrapper {
+  position: relative;
+
+  padding: 4.1rem 8.3rem;
+
+  width: 100%;
+  height: 65.2rem;
+
+  display: flex;
+  align-items: flex-end;
+
+  background-color: #161616;
+  border-radius: 27px;
+  border: 1px solid #212121;
+
+  margin-top: 2rem;
+  margin-bottom: 17rem;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+
+  max-width: 91.5rem;
+  width: 100%;
+}
+
+.title {
+  font-family: var(--font-pixel);
+  font-size: 4.8rem;
+  font-weight: 700;
+}
+
+.description {
+  margin-top: 2.5rem;
+  margin-bottom: 4.7rem;
+
+  font-size: 2rem;
+  opacity: 0.7;
+}
+
+.link {
+  font-size: 1.6rem;
+  line-height: 49px;
+  font-weight: 700;
+
+  border-radius: 16px;
+
+  text-transform: uppercase;
+
+  transition: all 0.2s ease-in-out;
+
+  padding: 1.35rem 18.6rem;
+
+  background: #FFD100;
+  color: #161616;
+
+  &:hover {
+    background: #212121;
+    color: #FFD100;
+  }
+}
+
+.bg {
+  position: absolute;
+
+  top: 1rem;
+  right: 1rem;
+}
+
+.game {
+  position: absolute;
+
+  bottom: 0;
+  left: 65rem;
+}
+
+.clever {
+  position: absolute;
+
+  left: 7rem;
+  top: 0;
+}
+
