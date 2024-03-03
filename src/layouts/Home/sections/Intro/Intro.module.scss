@@ -4,10 +4,6 @@
 
   position: relative;
 
-  background-image: url("../../../../../public/assets/images/intro_image.png");
-  background-size: contain;
-  background-position: center;
-
   display: flex;
   align-items: flex-end;
 
@@ -18,20 +14,8 @@
   position: absolute;
   top: 8.6rem;
   left: 40.4rem;
-}
+  z-index: 3;
 
-.coins {
-  position: absolute;
-  right: 23.6rem;
-  bottom: -5rem;
-}
-
-.wrapper {
-  margin-bottom: 3rem;
-
-  display: flex;
-  flex-direction: column;
-  gap: 1.4rem;
 }
 
 .title {
@@ -43,4 +27,55 @@
 .description {
   font-size: 2rem;
   opacity: 0.7;
+}
+
+.bg {
+  position: absolute;
+
+  top: 0;
+  left: 0;
+
+  z-index: 1;
+}
+
+.girl {
+  position: absolute;
+  top: 20rem;
+  left: 50rem;
+
+  width: 37.2rem;
+  height: 37rem;
+
+  border-radius: 16px;
+  z-index: 2;
+}
+
+.boy {
+  position: absolute;
+  top: 20rem;
+  left: 88rem;
+
+  width: 37.2rem;
+  height: 37rem;
+
+  border-radius: 16px;
+  z-index: 2;
+}
+
+.coins {
+  position: absolute;
+  right: 23.6rem;
+  bottom: -5rem;
+  z-index: 3;
+
+}
+
+.wrapper {
+  margin-bottom: 3rem;
+
+  display: flex;
+  flex-direction: column;
+  gap: 1.4rem;
+  z-index: 2;
+
 }
