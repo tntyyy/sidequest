@@ -1,0 +1,31 @@
+.wrapper {
+  padding: 4.8rem 4.8rem 6.3rem;
+
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+
+  background-color: #161616;
+  border-radius: 27px;
+  border: 1px solid #212121;
+}
+
+.number {
+  color: #CCB722;
+  font-size: 1.4rem;
+}
+
+.title {
+  font-size: 2.6rem;
+  font-weight: 700;
+
+  margin-top: 2rem;
+  margin-bottom: 3.2rem;
+}
+
+.content {
+  max-width: 65.8rem;
+
+  font-size: 1.6rem;
+  opacity: 0.8;
+}
