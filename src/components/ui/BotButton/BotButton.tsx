@@ -9,7 +9,7 @@ type BotButtonProps = {
 
 const BotButton: FC<BotButtonProps> = ({className}) => {
     return (
-        <Link className={classNames(styles.button, className)} href={'/botlink'}>
+        <Link className={classNames(styles.button, className)} href={'https://discord.gg/FJGW3eZ7vA'}>
             <svg width="149" height="56" viewBox="0 0 149 56" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <mask id="mask0_473_1866"  maskUnits="userSpaceOnUse" x="-5" y="0"
                       width="159" height="57">
