@@ -13,11 +13,11 @@
   border: 1px solid #212121;
   border-radius: 18px;
 
-  @include media-breakpoint-down(1120px) {
+  @media (max-width: 1120px) {
     flex-direction: column;
   }
 
-  @include media-breakpoint-down(670px) {
+  @media (max-width: 670px) {
     padding: 2rem 2.8rem 2rem;
   }
 }
@@ -50,7 +50,7 @@
   align-items: center;
   gap: 1rem;
 
-  @include media-breakpoint-down(670px) {
+  @media (max-width: 670px) {
     flex-wrap: wrap;
   }
 }
@@ -61,7 +61,7 @@
   display: flex;
   justify-content: center;
 
-  @include media-breakpoint-down(670px) {
+  @media (max-width: 670px) {
     display: none;
   }
 }

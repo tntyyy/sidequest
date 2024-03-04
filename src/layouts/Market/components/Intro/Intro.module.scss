@@ -22,7 +22,7 @@
     overflow: clip;
   }
 
-  @include media-breakpoint-down(880px) {
+  @media (max-width: 880px) {
     padding: 4rem;
     height: auto;
 
@@ -44,7 +44,7 @@
   font-size: 4.8rem;
   font-weight: 700;
 
-  @include media-breakpoint-down(550px) {
+  @media (max-width: 550px) {
     font-size: 3.6rem;
   }
 }
@@ -56,7 +56,7 @@
   font-size: 2rem;
   opacity: 0.7;
 
-  @include media-breakpoint-down(550px) {
+  @media (max-width: 550px) {
     font-size: 1.6rem;
   }
 }
@@ -82,7 +82,7 @@
     color: #FFD100;
   }
 
-  @include media-breakpoint-down(880px) {
+  @media (max-width: 880px) {
     width: 100%;
     padding: 1.35rem 0;
     text-align: center;
@@ -113,7 +113,7 @@
   left: 7rem;
   top: 0;
 
-  @include media-breakpoint-down(880px) {
+  @media (max-width: 880px) {
     display: none;
   }
 }

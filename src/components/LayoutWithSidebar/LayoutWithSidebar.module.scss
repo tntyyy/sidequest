@@ -6,7 +6,7 @@
   margin-top: 2rem;
   margin-bottom: 7rem;
 
-  @include media-breakpoint-down(1200px) {
+  @include media-breakpoint-down(xl) {
     flex-direction: column;
   }
 }
@@ -20,7 +20,7 @@
   position: sticky;
   top: 104px;
 
-  @include media-breakpoint-down(1200px) {
+  @include media-breakpoint-down(xl) {
     width: 100%;
 
     height: unset;
@@ -33,7 +33,7 @@
 .main {
   width: 65%;
 
-  @include media-breakpoint-down(1200px) {
+  @include media-breakpoint-down(xl) {
     width: 100%;
   }
 }

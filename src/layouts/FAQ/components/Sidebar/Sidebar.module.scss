@@ -23,7 +23,7 @@
   bottom: 0;
   right: 0;
 
-  @include media-breakpoint-down(600px) {
+  @media (max-width: 600px) {
     display: none;
   }
 }

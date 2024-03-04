@@ -23,7 +23,7 @@
 .image {
   width: 100%;
 
-  @include media-breakpoint-down(1200px) {
+  @media (max-width: 1200px) {
     height: auto;
   }
 }
