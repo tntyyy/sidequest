@@ -75,7 +75,7 @@ const BotButton: FC<BotButtonProps> = ({className}) => {
             </svg>
 
 
-            <span>Try SideKick Bot</span>
+            <span>SideKick Bot 🢂</span>
         </Link>
     );
 };
