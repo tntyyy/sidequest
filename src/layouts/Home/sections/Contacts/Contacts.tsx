@@ -17,7 +17,7 @@ const Contacts = () => {
                 <Image src={contactsImage} alt={'Contacts'} className={styles.image} />
             </div>
             <div className={styles.footer}>
-                <a href='mailto:support@sidekickgaming.com' className={classNames(styles.link, styles.email)}>support@sidekickgaming.com</a>
+                <a href='mailto:Web3@sidequestmeta.com' className={classNames(styles.link, styles.email)}>support@sidekickgaming.com</a>
                 <a href='/insta' className={styles.link}>instagram</a>
                 <a href='/facebook' className={styles.link}>facebook</a>
                 <a href='/twitter' className={styles.link}>twitter</a>
