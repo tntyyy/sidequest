@@ -4,4 +4,4 @@ export enum EFilters {
     Crypto = 'crypto',
 }
 
-export const filtersString: EFilters[] = [EFilters.All, EFilters.Gaming, EFilters.Crypto];
+export const filtersString: EFilters[] = [EFilters.All,  EFilters.Crypto]; //EFilters.Gaming,];

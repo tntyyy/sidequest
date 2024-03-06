@@ -9,6 +9,7 @@ import news5 from '../../public/assets/images/news/news5.png';
 import news6 from '../../public/assets/images/news/news6.png';
 import news7 from '../../public/assets/images/news/news7.png';
 import news8 from '../../public/assets/images/news/news8.png';
+import news9 from '../../public/assets/images/news/news9.png';
 
 export type TNews = {
     id: number;
@@ -21,6 +22,18 @@ export type TNews = {
 };
 
 export const newsData: TNews[] = [
+    {
+        id: 1,
+        image: news9,
+        date: '06/03/2024',
+        category: EFilters.Crypto,
+        title: 'SideQuest is one of the 13 new projects in Binance Labs MVB incubation program.',
+        description: 'Binance Labs, the venture capital and accelerator of Binance, has announced the 13 early-stage projects selected for season 7 of the Most Valuable Builder (MVB) Accelerator Program. ',
+        content: 'Please visit to find more details: \n \n https://www.bnbchain.org/en/blog/meet-the-most-valuable-builder-mvb-season-7-cohort',
+    }
+]
+
+const oldnewsData: TNews[] = [
     {
         id: 1,
         image: news1,
