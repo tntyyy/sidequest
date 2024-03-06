@@ -12,8 +12,10 @@ const Intro = () => {
         <main className={styles.intro}>
             <Image src={mushroom} alt={'mushroom'} className={styles.mushroom} />
             <Image src={coins} alt={'coins'} className={styles.coins} />
-            <Image src={boyGif} alt={'boy'} className={styles.boy} />
-            <Image src={girlGif} alt={'girl'} className={styles.girl} />
+            <div className={styles.gifs}>
+                <Image src={boyGif} alt={'boy'} className={styles.boy} />
+                <Image src={girlGif} alt={'girl'} className={styles.girl} />
+            </div>
             <Image src={introBg} alt={'intro'} className={styles.bg} />
             <div className={styles.wrapper}>
                 <h1 className={styles.title}>Beyond Gaming</h1>

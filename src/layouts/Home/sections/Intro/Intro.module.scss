@@ -13,7 +13,14 @@
 
   overflow-x: clip;
 
-  @include media-breakpoint-down(sm) {
+  @media (max-width: 1320px) {
+    align-items: center;
+    flex-direction: column-reverse;
+    justify-content: flex-end;
+    padding-top: 4rem;
+  }
+
+  @include media-breakpoint-down(lg) {
     align-items: flex-start;
     flex-direction: column-reverse;
     justify-content: flex-end;
@@ -30,6 +37,33 @@
   left: 40.4rem;
   z-index: 3;
 
+  @media (max-width: 1320px) {
+    left: 3rem;
+  }
+
+  @include media-breakpoint-down(lg) {
+    width: 6rem;
+    left: 50rem;
+    top: 5rem;
+  }
+}
+
+.gifs {
+  @media (max-width: 1320px) {
+    display: flex;
+    flex-direction: row-reverse;
+    gap: 2rem;
+  }
+
+  @include media-breakpoint-down(lg) {
+    width: 100%;
+    display: flex;
+    gap: 1rem;
+  }
+
+  @include media-breakpoint-down(sm) {
+    flex-direction: column-reverse;
+  }
 }
 
 .title {
@@ -51,7 +85,7 @@
 
   z-index: 1;
 
-  @include media-breakpoint-down(sm) {
+  @media (max-width: 1320px) {
     display: none;
   }
 }
@@ -67,7 +101,12 @@
   border-radius: 16px;
   z-index: 2;
 
-  @include media-breakpoint-down(sm) {
+  @media (max-width: 1320px) {
+    position: unset;
+    align-self: center;
+  }
+
+  @include media-breakpoint-down(lg) {
     position: unset;
     align-self: center;
     width: 100%;
@@ -87,7 +126,12 @@
   border-radius: 16px;
   z-index: 2;
 
-  @include media-breakpoint-down(sm) {
+  @media (max-width: 1320px) {
+    position: unset;
+    align-self: center;
+  }
+
+  @include media-breakpoint-down(lg) {
     position: unset;
     align-self: center;
     width: 100%;
@@ -108,7 +152,7 @@
     left: 3rem;
   }
 
-  @include media-breakpoint-down(sm) {
+  @include media-breakpoint-down(lg) {
     display: none;
   }
 }
