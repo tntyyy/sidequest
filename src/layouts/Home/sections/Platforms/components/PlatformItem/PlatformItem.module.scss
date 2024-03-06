@@ -18,28 +18,5 @@
   &:hover {
     background: #FFD100;
     color: #000000;
-
-    svg {
-      visibility: visible;
-      opacity: 1;
-    }
-  }
-
-  svg {
-    position: absolute;
-    top: 0;
-    left: 0;
-
-    visibility: hidden;
-    opacity: 0;
-
-    transition: all 0.2s ease-in-out;
-
-    z-index: 1;
-  }
-
-  span {
-    position: relative;
-    z-index: 3;
   }
 }
