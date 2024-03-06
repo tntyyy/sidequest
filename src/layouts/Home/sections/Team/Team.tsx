@@ -7,6 +7,7 @@ import {teamData} from '@/src/layouts/Home/sections/Team/Team.data';
 import TeamItem from '@/src/layouts/Home/sections/Team/components/TeamItem';
 import PixelArrow from '@/src/components/ui/PixelArrow/PixelArrow';
 import classNames from 'classnames';
+import SectionTitle from '@/src/components/ui/SectionTitle/SectionTitle';
 
 const Team = () => {
     const [swiper, setSwiper] = useState<
@@ -42,51 +43,61 @@ const Team = () => {
     );
 
     return (
-        <section className={styles.wrapper}>
-            <div className={styles.slider}>
-                <Swiper
-                    onSwiper={onSwiperInitHandler}
-                    slidesPerView={'auto'}
-                    spaceBetween={32}
-                    tag="div"
-                    preventInteractionOnTransition={true}
-                    watchSlidesProgress={true}
-                    onResize={onSwiperResizeHandler}
-                    breakpoints={{
-                        1380: {
-                           slidesPerView: 3,
-                        },
-                        992: {
-                            slidesPerView: 3,
-                        },
-                    }}
-                >
-                    {
-                        teamData.map((item) => {
-                            return (
-                                <SwiperSlide
-                                    key={item.name}
-                                    className={styles.slide}
-                                >
-                                    <TeamItem {...item} />
-                                </SwiperSlide>
-                            );
-                        })
-                    }
-                </Swiper>
+        <section className={styles.container}>
+            <div className={styles.header}>
+                <SectionTitle className={styles.title}>Our Team</SectionTitle>
+                <div className={styles.description}>
+                    Scroll right or tap to find out
+                </div>
             </div>
-            <div className={styles.nav}>
-                <div className={styles.nav__content}>
-                    <p className={styles.nav__title}>
-                        The team
-                    </p>
-                    <div className={styles.nav__btns}>
-                        <button onClick={handleOnPrevButtonClick} className={classNames(styles.btn, styles.btn__prev)}>
-                            <PixelArrow/>
-                        </button>
-                        <button onClick={handleOnNextButtonClick} className={classNames(styles.btn, styles.btn__next)}>
-                            <PixelArrow/>
-                        </button>
+            <div className={styles.wrapper}>
+                <div className={styles.slider}>
+                    <Swiper
+                        onSwiper={onSwiperInitHandler}
+                        slidesPerView={'auto'}
+                        spaceBetween={32}
+                        tag="div"
+                        preventInteractionOnTransition={true}
+                        watchSlidesProgress={true}
+                        onResize={onSwiperResizeHandler}
+                        breakpoints={{
+                            1380: {
+                                slidesPerView: 3,
+                            },
+                            992: {
+                                slidesPerView: 3,
+                            },
+                        }}
+                    >
+                        {
+                            teamData.map((item) => {
+                                return (
+                                    <SwiperSlide
+                                        key={item.name}
+                                        className={styles.slide}
+                                    >
+                                        <TeamItem {...item} />
+                                    </SwiperSlide>
+                                );
+                            })
+                        }
+                    </Swiper>
+                </div>
+                <div className={styles.nav}>
+                    <div className={styles.nav__content}>
+                        <p className={styles.nav__title}>
+                            The team
+                        </p>
+                        <div className={styles.nav__btns}>
+                            <button onClick={handleOnPrevButtonClick}
+                                    className={classNames(styles.btn, styles.btn__prev)}>
+                                <PixelArrow/>
+                            </button>
+                            <button onClick={handleOnNextButtonClick}
+                                    className={classNames(styles.btn, styles.btn__next)}>
+                                <PixelArrow/>
+                            </button>
+                        </div>
                     </div>
                 </div>
             </div>
