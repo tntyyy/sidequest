@@ -1,6 +1,7 @@
+import {ReactNode} from 'react';
 import {StaticImageData} from 'next/image';
-import {EFilters} from '@/src/layouts/News/constants/filters';
 
+import {EFilters} from '@/src/layouts/News/constants/filters';
 import news1 from '../../public/assets/images/news/news1.png';
 import news2 from '../../public/assets/images/news/news2.png';
 import news3 from '../../public/assets/images/news/news3.png';
@@ -18,19 +19,66 @@ export type TNews = {
     image: StaticImageData;
     title: string;
     description: string;
-    content: string;
+    content: ReactNode;
 };
 
 export const newsData: TNews[] = [
     {
-        id: 1,
+        id: 2,
         image: news9,
-        date: '06/03/2024',
+        date: '07/03/2024',
         category: EFilters.Crypto,
-        title: 'SideQuest is one of the 13 new projects in Binance Labs MVB incubation program.',
-        description: 'Binance Labs, the venture capital and accelerator of Binance, has announced the 13 early-stage projects selected for season 7 of the Most Valuable Builder (MVB) Accelerator Program. ',
-        content: 'Please visit to find more details: \n \n https://www.bnbchain.org/en/blog/meet-the-most-valuable-builder-mvb-season-7-cohort',
-    }
+        title: 'SideQuest, the UK’s largest gaming cafe brand, announced as one of 13 new projects in Binance’s MVB incubation program',
+        description: 'SideQuest, the UK’s largest gaming cafe brand and an online gaming platform of over 180k community members, has been selected for season 7 of the Most Valuable Builder (MVB) Accelerator Program by Binance. The brand is the only web3 social project in the competition.',
+        content: (
+            <>
+                <p>
+                    <a href="https://sidequestclub.xyz/" target={'_blank'}>SideQuest</a>, the UK’s largest gaming cafe
+                    brand and an online gaming platform of over 180k community members, has been selected for season 7
+                    of the <a
+                    href="https://www.bnbchain.org/en/bsc-mvb-program" target={'_blank'}>Most Valuable Builder
+                    (MVB)</a> Accelerator Program by Binance. The brand is the only web3 social project in the
+                    competition.
+                </p>
+                <p>
+                    The 10-week accelerator program supports early-stage Web3 builders to grow and will conclude with a Binance Labs investment based on Demo Day pitches and project performance throughout MVB.
+                </p>
+                <p>
+                    “For us, being one of the selected projects means not only receiving vital support and guidance for our vision but also validating the importance of fostering inclusive and vibrant gaming communities. With <a
+                    href="https://explodingtopics.com/blog/number-of-gamers" target={"_blank"}>3.9 billion active video game players globally</a>, we believe the need for community will only become more important in the coming years.
+                </p>
+                <p>
+                    We are implementing major changes to our business model to reflect the way the industry is shifting and are very excited to be part of Binance’s programme ” said Zhaorong Chen, CEO of SideQuest
+                </p>
+                <p>
+                    The accelerator program ranks among the blockchain industry’s most competitive, with Season 7 attracting over 700 applications. However, only 13 teams, constituting 1.8% of the total applicant pool, were admitted.
+                </p>
+                <p>
+                    Established in London in 2022, SideQuest is the largest UK gaming cafe brand. The company prides itself on providing a welcoming environment for gaming enthusiasts of all kinds. They offer dynamic gaming spaces, major tournament events, and endless opportunities to forge new friendships and foster vibrant gaming communities.
+                </p>
+                <p>
+                    SideQuest has collaborated with over 40 games such as League of Legends, Fortnite, and CS:GO. The brand organises over 150 tournaments and events yearly featuring a £50k prize pool, giveaways, and engaging activities on the platform.
+                </p>
+                <p>
+                    The company also serves as a social gaming platform, facilitating online connections and enabling players to find gaming partners. For instance, the company features a unique
+                    <a href="https://sidequesthub.com/static/pdfjs/web/viewer.html?file=/static/policy/SideKick-Policies.pdf" target={"_blank"}>Sidekick system</a> where players can connect with experienced mentors to guide them on their journeys to become pro gamers.
+                </p>
+                <p>
+                    With a focus on merging real-life and online gaming experiences, SideQuest is the go-to platform for playing with friends.
+                </p>
+                <h5>About SideQuest</h5>
+                <p>
+                    SideQuest stands as the ultimate gaming destination catering to every type of gamer. Our mission is to cultivate an inclusive and enjoyable space for all gaming enthusiasts, offering gaming areas, exciting events, dining options, and opportunities to connect and grow gaming communities.
+                </p>
+                <p>
+                    Whether you`re into meeting new players, gaming with your squad, spectating esports tournaments, or meeting your favorite streamers, SideQuest is dedicated to providing you with the ultimate gaming experience. Our unique hub setup also allows you to explore and test our range of gaming peripherals and hardware.
+                </p>
+                <p>
+                    With hands-on access to the latest gaming mice, keyboards, headsets, and more, you can find the perfect gear for your home setup. At SideQuest, we believe in "PLAY YOUR WAY," making our hubs the premier destination for your gaming journey.
+                </p>
+            </>
+        ),
+    },
 ]
 
 const oldnewsData: TNews[] = [
@@ -215,30 +263,5 @@ const oldnewsData: TNews[] = [
             'Major financial institutions have also recognised the potential of these new ETFs. Recently, a coalition of Wall Street’s largest firms have been urging the SEC to revise guidelines that would enable banks to serve as custodians for Bitcoin funds.\n' +
             'According to Santiment, the seven leading spot ETFs experienced daily trading volumes exceeding $1.8 billion in early February. This stands as a testament to the growing integration of digital assets into traditional investment portfolios.\n' +
             'As investments continue to flow into Bitcoin ETFs, the cryptocurrency market is poised for further growth, offering new opportunities for investors looking to diversify their portfolios with digital assets.\n',
-    },
-    {
-        id: 8,
-        image: news8,
-        date: '02/03/2024',
-        category: EFilters.Crypto,
-        title: 'Whales withdraw $1B in BTC from Coinbase',
-        description: 'In a notable event, whales withdraw $1 billion in BTC from Coinbase, sending ripples through the crypto market and underscoring the dynamic nature of cryptocurrency holdings​​.',
-        content: 'Coinbase now has $20.5bn in its public order book, which is its lowest level since 2015.\n' +
-            'Bitcoin holdings on Coinbase, one of the leading cryptocurrency exchanges, have hit a nine-year low as users strategically move a substantial chunk of their holdings off the platform. \n' +
-            'The latest data from CryptoQuant reveals that over the weekend, whales orchestrated the transfer of 18,000 $BTC, amounting to nearly $1 billion, from Coinbase. \n' +
-            'The values per transfer ranged between $45 million and $171 million, leaving Coinbase’s public order book with approximately 394,000 $BTC, equivalent to an estimated $20.5bn.\n' +
-            'Where is the BTC going? \n' +
-            'The migration of Bitcoin holdings away from centralised exchanges, particularly Coinbase, is often viewed as a bullish indicator, signalling reduced availability for sale.\n' +
-            'However, the crypto community on social media finds itself divided on the motives behind these transfers. Some speculate that the funds are finding refuge in custodial wallets, anticipating a potential surge in prices. \n' +
-            'The looming Bitcoin halving, just two months away, is seen as a key factor contributing to this supply shock. Conversely, there are voices suggesting that these moved funds might be earmarked for liquidity in over-the-counter (OTC) trades.\n' +
-            'Adding another layer of complexity, some argue that these withdrawals may be going to a different custodian, asserting that a substantial portion of assets on exchanges does not truly belong to individual users due to their centralised nature.\n' +
-            'Bitcoin halving\n' +
-            'The upcoming Bitcoin halving, slated for April at a block height of 740,000, is set to further tighten the supply of new $BTC entering the market. During each halving cycle, the block reward for miners is halved, reducing the new $BTC supply. In this case, the block reward will drop from 6.25 BTC to 3.125 $BTC. \n' +
-            'This scarcity will be combined with robust institutional demand, following the approval of 11 spot Bitcoin exchange-traded funds (ETFs) in the United States in January.\n' +
-            'Currently, around 900 $BTC is mined daily, while daily net inflows for Bitcoin ETFs hover around half a billion dollars or roughly 9,650 $BTC. Even with Grayscale registering nearly $100m in daily outflows, institutional interest remains strong. \n' +
-            'Post-halving in April, the daily mined $BTC will see a reduction to about 450 $BTC, creating a significant supply-demand gap. Historical data suggests that such gaps have historically favoured bullish trends in the Bitcoin price, often leading to new all-time highs within a year of the halving event.\n' +
-            'Bitcoin recent price movement\n' +
-            'After a bearish slump following the sell-the-news reaction to the ETF approval, Bitcoin has made strong gains over the past few weeks. \n' +
-            'Bitcoin is trading at around $52,000, its highest level since December 2021. The largest cryptocurrency is up 4% in the past seven days and 25% in the past month. However, it is still down 25% from it’s all-time high of around $69,000.\n',
     },
 ]

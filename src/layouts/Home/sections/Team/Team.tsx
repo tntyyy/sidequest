@@ -85,9 +85,14 @@ const Team = () => {
                 </div>
                 <div className={styles.nav}>
                     <div className={styles.nav__content}>
-                        <p className={styles.nav__title}>
-                            The team
-                        </p>
+                        <div className={styles.nav__header}>
+                            <p className={styles.nav__title}>
+                                The team
+                            </p>
+                            <span className={styles.nav__header__description}>
+                                Tap to find out
+                            </span>
+                        </div>
                         <div className={styles.nav__btns}>
                             <button onClick={handleOnPrevButtonClick}
                                     className={classNames(styles.btn, styles.btn__prev)}>

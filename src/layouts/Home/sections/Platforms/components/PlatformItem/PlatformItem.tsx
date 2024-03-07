@@ -6,6 +6,7 @@ const PlatformItem = ({href, text}: { href: string, text: string }) => {
         <Link
             href={href}
             className={styles.list__item}
+            target={"_blank"}
         >
             <span>{text}</span>
         </Link>

@@ -2,7 +2,7 @@ export const platformsDataLogin = [
     {
         id: 1,
         text: 'Discord',
-        href: '/discord',
+        href: 'https://discord.gg/FJGW3eZ7vA',
     },
     {
         id: 2,

@@ -9,8 +9,8 @@ export type TeamDataType = {
     post: string;
     name: string;
     info: string[];
-    linkedIn: string;
-    twitter: string;
+    linkedIn: string | null;
+    twitter: string | null;
 }
 
 export const teamData: TeamDataType[] = [
@@ -18,8 +18,8 @@ export const teamData: TeamDataType[] = [
         icon: team1,
         post: 'Co-founder',
         name: 'HeyFish Z',
-        linkedIn: '/',
-        twitter: '/',
+        linkedIn: null,
+        twitter: 'https://twitter.com/HeyfishYC',
         info: [
             '2013 UK LOL League 3rd place',
             '2014 UK LOL League Champion',
@@ -32,8 +32,8 @@ export const teamData: TeamDataType[] = [
         icon: team2,
         post: 'Co-founder',
         name: 'San',
-        linkedIn: '/',
-        twitter: '/',
+        linkedIn: null,
+        twitter: null,
         info: [
             'Board member of various  game studios & charities',
             'Games industry investor ($2bn deployed)',
@@ -45,8 +45,8 @@ export const teamData: TeamDataType[] = [
         icon: team3,
         post: 'Co-founder',
         name: 'Michael',
-        linkedIn: '/',
-        twitter: '/',
+        linkedIn: null,
+        twitter: null,
         info: [
             'Product operation lead of Trovo.live over 20M registered users',
             'Product operation lead of a marketplace platform with over 300M annual GMV',
@@ -57,8 +57,8 @@ export const teamData: TeamDataType[] = [
         icon: team4,
         post: 'Co-founder',
         name: 'D.F',
-        linkedIn: '/',
-        twitter: '/',
+        linkedIn: null,
+        twitter: 'https://twitter.com/Diegoseesthat',
         info: [
             'Co-founder of Trovo.live',
             'Owner of streamer network “Wings”',

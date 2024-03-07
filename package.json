@@ -9,11 +9,13 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@types/react-linkify": "^1.0.4",
     "bootstrap": "^5.3.3",
     "classnames": "^2.5.1",
     "next": "^14.1.1",
     "react": "^18",
     "react-dom": "^18",
+    "react-linkify": "^1.0.0-alpha",
     "sanitize.css": "^13.0.0",
     "sass": "^1.71.1",
     "swiper": "^11.0.7"

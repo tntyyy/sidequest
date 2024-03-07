@@ -2,9 +2,8 @@
   perspective: 1000px;
 }
 
-.card:hover .card__inner {
+.card__inner_clicked {
   transform: rotateY(180deg);
-
 }
 
 .card__inner {
@@ -24,6 +23,8 @@
   flex-direction: column;
 
   backface-visibility: hidden;
+
+  cursor: pointer;
 }
 
 .info {

@@ -17,12 +17,12 @@ const Contacts = () => {
                 <Image src={contactsImage} alt={'Contacts'} className={styles.image} />
             </div>
             <div className={styles.footer}>
-                <a href='mailto:Web3@sidequestmeta.com' className={classNames(styles.link, styles.email)}>Web3@sidequestmeta.com</a>
-                <a href='https://www.instagram.com/sidequest_hub/' className={styles.link}>instagram</a>
-                <a href='https://www.facebook.com/sidequesthub' className={styles.link}>facebook</a>
-                <a href='https://twitter.com/SideQuest_Hub' className={styles.link}>twitter</a>
-                <a href='https://discord.com/invite/WE6sHZHtWe' className={styles.link}>discord</a>
-                <a href='https://www.youtube.com/@sidequestgamershub/videos' className={styles.link}>youtube</a>
+                <a target={"_blank"} href='mailto:Web3@sidequestmeta.com' className={classNames(styles.link, styles.email)}>Web3@sidequestmeta.com</a>
+                <a target={"_blank"} href='https://www.instagram.com/sidequest_hub/' className={styles.link}>instagram</a>
+                <a target={"_blank"} href='https://www.facebook.com/sidequesthub' className={styles.link}>facebook</a>
+                <a target={"_blank"} href='https://twitter.com/SideQuest_Hub' className={styles.link}>twitter</a>
+                <a target={"_blank"} href='https://discord.com/invite/WE6sHZHtWe' className={styles.link}>discord</a>
+                <a target={"_blank"} href='https://www.youtube.com/@sidequestgamershub/videos' className={styles.link}>youtube</a>
             </div>
         </div>
     );
