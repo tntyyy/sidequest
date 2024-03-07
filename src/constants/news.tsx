@@ -60,7 +60,7 @@ export const newsData: TNews[] = [
                     SideQuest has collaborated with over 40 games such as League of Legends, Fortnite, and CS:GO. The brand organises over 150 tournaments and events yearly featuring a £50k prize pool, giveaways, and engaging activities on the platform.
                 </p>
                 <p>
-                    The company also serves as a social gaming platform, facilitating online connections and enabling players to find gaming partners. For instance, the company features a unique
+                    The company also serves as a social gaming platform, facilitating online connections and enabling players to find gaming partners. For instance, the company features a unique&nbsp;
                     <a href="https://sidequesthub.com/static/pdfjs/web/viewer.html?file=/static/policy/SideKick-Policies.pdf" target={"_blank"}>Sidekick system</a> where players can connect with experienced mentors to guide them on their journeys to become pro gamers.
                 </p>
                 <p>
@@ -74,7 +74,7 @@ export const newsData: TNews[] = [
                     Whether you`re into meeting new players, gaming with your squad, spectating esports tournaments, or meeting your favorite streamers, SideQuest is dedicated to providing you with the ultimate gaming experience. Our unique hub setup also allows you to explore and test our range of gaming peripherals and hardware.
                 </p>
                 <p>
-                    With hands-on access to the latest gaming mice, keyboards, headsets, and more, you can find the perfect gear for your home setup. At SideQuest, we believe in "PLAY YOUR WAY," making our hubs the premier destination for your gaming journey.
+                    With hands-on access to the latest gaming mice, keyboards, headsets, and more, you can find the perfect gear for your home setup. At SideQuest, we believe in &apos;PLAY YOUR WAY&apos; making our hubs the premier destination for your gaming journey.
                 </p>
             </>
         ),
