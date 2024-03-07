@@ -48,7 +48,7 @@ export const newsData: TNews[] = [
                     href="https://explodingtopics.com/blog/number-of-gamers" target={"_blank"}>3.9 billion active video game players globally</a>, we believe the need for community will only become more important in the coming years.
                 </p>
                 <p>
-                    We are implementing major changes to our business model to reflect the way the industry is shifting and are very excited to be part of Binance’s programme ” said Zhaorong Chen, CEO of SideQuest
+                    We are implementing major changes to our business model to reflect the way the industry is shifting and are very excited to be part of Binance’s programme ” said Jonny Chen, CEO of SideQuest
                 </p>
                 <p>
                     The accelerator program ranks among the blockchain industry’s most competitive, with Season 7 attracting over 700 applications. However, only 13 teams, constituting 1.8% of the total applicant pool, were admitted.
