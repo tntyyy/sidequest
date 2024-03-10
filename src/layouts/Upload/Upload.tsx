@@ -1,18 +1,19 @@
+import styles from './Upload.module.scss';
 import MainContainer from '@/src/components/MainContainer/MainContainer';
 import Header from '@/src/components/Header/Header';
 import Contacts from '@/src/layouts/Home/sections/Contacts/Contacts';
 import Footer from '@/src/components/Footer/Footer';
-import Intro from '@/src/layouts/Market/components/Intro/Intro';
+import Main from '@/src/layouts/Upload/components/Main/Main';
 
-const Market = () => {
+const Upload = () => {
     return (
         <MainContainer>
             <Header />
-            <Intro />
+            <Main />
             <Contacts />
             <Footer />
         </MainContainer>
     );
 };
 
-export default Market;
+export default Upload;

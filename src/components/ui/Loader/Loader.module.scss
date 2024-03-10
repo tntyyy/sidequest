@@ -1,0 +1,22 @@
+.icon {
+  path {
+    transform-origin: center;
+  }
+
+  path:first-child {
+    animation: rotate 4s linear infinite, dash 1.5s ease-in-out infinite;
+  }
+
+  path:last-child {
+    animation: rotate 2s linear infinite, dash 1.5s ease-in-out infinite;
+  }
+}
+
+@keyframes rotate {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}

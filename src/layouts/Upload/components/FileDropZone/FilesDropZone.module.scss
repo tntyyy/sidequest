@@ -1,0 +1,114 @@
+.wrapper {
+  max-width: 52.8rem;
+  width: 100%;
+  background-color: #000000;
+  border-radius: 24px;
+  overflow: hidden;
+
+
+}
+
+.header {
+  background-color: #FFD100;
+  padding: 1.6rem 0;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.new {
+  padding: 0.7rem 2rem;
+  border-radius: 40px;
+  text-align: center;
+  font-weight: 500;
+
+  background: #000000;
+  color: #FFFFFF;
+  opacity: 1;
+}
+
+.button {
+  padding: 0.7rem 2rem;
+  border-radius: 40px;
+  text-align: center;
+  font-weight: 500;
+
+  background: #FFFFFF;
+  color: #000000;
+
+  transition: opacity 0.2s ease-in-out;
+  cursor: pointer;
+
+  &:hover {
+    opacity: 0.8;
+  }
+}
+
+.container {
+  padding: 3.2rem;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  height: 47.4rem;
+}
+
+.dropZone {
+  width: 100%;
+  border: 2px dashed #aaa;
+  border-radius: 24px;
+  padding: 18.2rem 3.2rem;
+  text-align: center;
+  cursor: pointer;
+}
+
+.dropZone.dragOver {
+  border-color: #66c7ff;
+}
+
+.text {
+  font-size: 14px;
+  color: #FFFFFF;
+  opacity: 0.5;
+}
+
+.dropZone:hover {
+  border-color: #FFD100;
+
+  .text {
+    opacity: 1;
+  }
+}
+
+.dropZone input {
+  display: none;
+}
+
+.result {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+
+  &__text {
+    text-align: center;
+  }
+
+  &__button {
+    margin-top: 1.5rem;
+    padding: 1rem 2.5rem;
+    background: #FFD100;
+    border-radius: 6px;
+    color: #212121;
+    font-weight: 500;
+
+    cursor: pointer;
+
+    &:hover {
+      opacity: 0.8;
+    }
+  }
+}
