@@ -10,26 +10,30 @@ export const chaptersData: TChapter[] = [
     },
     {
         id: 2,
-        title: 'The Creator Economy',
+        title: 'Market and Users',
     },
     {
         id: 3,
-        title: 'A New Era of Interaction',
+        title: 'Why SideQuest',
     },
     {
         id: 4,
-        title: 'The REPUBLIK Platform',
+        title: 'Product Concepts',
     },
     {
         id: 5,
-        title: 'Our Mission',
+        title: 'Tokenomics',
     },
     {
         id: 6,
-        title: 'The Creator Journey',
+        title: 'Roadmap',
     },
     {
         id: 7,
-        title: 'Functionality',
+        title: 'Team',
+    },
+    {
+        id: 8,
+        title: 'Social Media',
     }
 ];

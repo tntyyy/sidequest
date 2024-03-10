@@ -1,30 +1,37 @@
 import styles from './Sidebar.module.scss';
-import {FC} from 'react';
+import {FC, useEffect, useState} from 'react';
 import classNames from 'classnames';
-import {chaptersData, TChapter} from '@/src/layouts/WhitePaper/constants/chapters';
+import { chaptersData } from '@/src/layouts/WhitePaper/constants/chapters';
+import Link from 'next/link';
+import {useRouter} from 'next/router';
 
-type SidebarProps = {
-    selectedChapter: TChapter;
-    setSelectedChapter: (chapter: TChapter) => void;
-}
+const Sidebar: FC = () => {
+    const router = useRouter();
 
-const Sidebar: FC<SidebarProps> = ({ selectedChapter, setSelectedChapter }) => {
+    const [selectedId, setSelectedId] = useState<number>(1);
+
+    useEffect(() => {
+        const id = Number(router.asPath.split('#')[1]) || 1;
+        setSelectedId(id);
+    }, [router]);
+
+
     return (
         <div className={styles.wrapper}>
-            <h1 className={styles.title}>News&Events</h1>
+            <h1 className={styles.title}>Whitepaper</h1>
             <div className={styles.list}>
                 {
                     chaptersData.map((item) => {
                         return (
-                            <button
+                            <Link
+                                href={`#${item.id}`}
                                 key={item.id}
                                 className={classNames(styles.list__item, {
-                                    [styles.active]: selectedChapter.id === item.id
+                                    [styles.active]: selectedId === item.id
                                 })}
-                                onClick={() => setSelectedChapter(item)}
                             >
                                 {item.title}
-                            </button>
+                            </Link>
                         );
                     })
                 }
