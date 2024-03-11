@@ -7,7 +7,6 @@ import uploadImage from '../../../../../public/assets/icons/upload.png';
 const Main = () => {
     return (
         <main className={styles.wrapper}>
-
             <div className={styles.content}>
                 <h1 className={styles.title}>Upload Your Profile Avatar</h1>
                 <p className={styles.description}>First impressions matter. What’s your style?</p>

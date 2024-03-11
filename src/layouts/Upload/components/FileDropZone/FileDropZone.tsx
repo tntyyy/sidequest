@@ -5,8 +5,11 @@ import Loader from '@/src/components/ui/Loader/Loader';
 import Image from 'next/image';
 import success from '../../../../../public/assets/icons/success.png';
 import error from '../../../../../public/assets/icons/error.png';
+import {useRouter} from 'next/router';
 
 const FileDropZone = () => {
+    const router = useRouter();
+
     const [isDragOver, setIsDragOver] = useState(false);
     const fileInputRef = useRef<HTMLInputElement>(null);
     const [isLoading, setIsLoading] = useState<boolean>(false);
@@ -53,17 +56,19 @@ const FileDropZone = () => {
         const allowedFileTypes = ['image/png', 'image/jpeg', 'image/jpg', 'image/gif'];
 
         if (!allowedFileTypes.includes(file.type)) {
-            // Обработка ошибки - неверный тип файла
             if (onFileUploadError) {
                 onFileUploadError();
             }
             return;
         }
 
+        const uploadId = router.query['uploadId'];
+        console.log(uploadId);
+
         const formData = new FormData();
         formData.append('file', file);
 
-        fetch('api', {
+        fetch(`http://3.121.230.129:1028/upload/${uploadId}`, {
             method: 'POST',
             body: formData,
         })
