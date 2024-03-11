@@ -2,12 +2,12 @@ export const platformsDataLogin = [
     {
         id: 1,
         text: 'Discord',
-        href: 'https://discord.gg/xbKhvmByvy',
+        href: 'https://linktr.ee/SideQuestProject',
     },
     {
         id: 2,
         text: 'Telegram',
-        href: '/discord',
+        href: 'https://linktr.ee/SideQuestProject',
     },
 ];
 
@@ -15,21 +15,21 @@ export const platformDataBrowser = [
     {
         id: 1,
         text: 'Chrome',
-        href: '/chrome',
+        href: 'https://linktr.ee/SideQuestProject',
     },
     {
         id: 2,
         text: 'Safari',
-        href: '/safari',
+        href: 'https://linktr.ee/SideQuestProject',
     },
     {
         id: 3,
         text: 'Opera',
-        href: '/opera',
+        href: 'https://linktr.ee/SideQuestProject',
     },
     {
         id: 4,
         text: 'Edge',
-        href: '/edge',
+        href: 'https://linktr.ee/SideQuestProject',
     },
 ]

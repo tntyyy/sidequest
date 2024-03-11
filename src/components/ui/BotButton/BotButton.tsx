@@ -10,7 +10,7 @@ type BotButtonProps = {
 
 const BotButton: FC<BotButtonProps> = ({className}) => {
     return (
-        <Link className={classNames(styles.button, className)} href={'https://discord.gg/xbKhvmByvy'} target={"_blank"}>
+        <Link className={classNames(styles.button, className)} href={'https://linktr.ee/SideQuestProject'} target={"_blank"}>
             <span>SideQuest Bot <PixelArrow /></span>
         </Link>
     );

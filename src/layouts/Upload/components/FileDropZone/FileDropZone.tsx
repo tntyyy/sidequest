@@ -68,7 +68,7 @@ const FileDropZone = () => {
         const formData = new FormData();
         formData.append('file', file);
 
-        fetch(`http://3.121.230.129:1028/upload/${uploadId}`, {
+        fetch(`https://sidequestclub.xyz/api_upload/upload/${uploadId}`, {
             method: 'POST',
             body: formData,
         })

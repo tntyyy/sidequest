@@ -21,7 +21,7 @@ const Contacts = () => {
                 <a target={"_blank"} href='https://www.instagram.com/sidequest_hub/' className={styles.link}>instagram</a>
                 <a target={"_blank"} href='https://www.facebook.com/sidequesthub' className={styles.link}>facebook</a>
                 <a target={"_blank"} href='https://twitter.com/SideQuest_Hub' className={styles.link}>twitter</a>
-                <a target={"_blank"} href='https://discord.gg/xbKhvmByvy' className={styles.link}>discord</a>
+                <a target={"_blank"} href='https://linktr.ee/SideQuestProject' className={styles.link}>discord</a>
                 <a target={"_blank"} href='https://www.youtube.com/@sidequestgamershub/videos' className={styles.link}>youtube</a>
             </div>
         </div>

@@ -291,7 +291,7 @@ export const whitepaperData: TWhitePaper[] = [
                         <a target='_blank' href='https://www.instagram.com/sidequest_hub/'>Instagram</a>
                     </li>
                     <li>
-                        <a target='_blank' href="https://discord.gg/xbKhvmByvy">Discord</a>
+                        <a target='_blank' href="https://linktr.ee/SideQuestProject">Discord</a>
                     </li>
                     <li>
                         <a target='_blank' href='https://tr.ee/Mf98ZDfwsu'>TikTok</a>

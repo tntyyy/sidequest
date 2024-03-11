@@ -11,7 +11,7 @@ const Intro = () => {
             <div className={styles.content}>
                 <h1 className={styles.title}>Welcome to the SideQuest Marketplace - Coming Soon!</h1>
                 <p className={styles.description}>Your Adventure Starts Here. Are You Ready?</p>
-                <Link href='https://discord.gg/xbKhvmByvy' target={"_blank"} className={styles.link}>SIGN UP FOR UPDATES</Link>
+                <Link href='https://linktr.ee/SideQuestProject' target={"_blank"} className={styles.link}>SIGN UP FOR UPDATES</Link>
             </div>
             <Image src={clever} alt={'Market'} className={styles.clever} />
             <Image src={game} alt={'Market'} className={styles.game} />
