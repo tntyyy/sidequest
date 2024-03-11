@@ -18,8 +18,8 @@ const Intro = () => {
             </div>
             <Image src={introBg} alt={'intro'} className={styles.bg} />
             <div className={styles.wrapper}>
-                <h1 className={styles.title}>Beyond Gaming</h1>
-                <p className={styles.description}>A New Era of Secure, Decentralized Play</p>
+                <h1 className={styles.title}>Gaming, Social and Beyond</h1>
+                <p className={styles.description}>User-centric Products For Mass Adoption of Web 3</p>
             </div>
         </main>
     );

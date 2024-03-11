@@ -7,29 +7,11 @@ import {newsData, TNews} from '@/src/constants/news';
 import NewsItem from '@/src/layouts/News/components/NewsItem/NewsItem';
 
 const Main = () => {
-    const [selectedFilter, setSelectedFilter] = useState<EFilters>(EFilters.All);
-    const [news, setNews] = useState<TNews[]>(newsData);
-
-    const handleSelectFilter = (filter: EFilters) => {
-        setSelectedFilter(filter);
-    }
-
-    useEffect(() => {
-        if (selectedFilter === EFilters.All) {
-            setNews(newsData);
-        } else {
-            const filteredNews = newsData.filter((item) => {
-                return item.category === selectedFilter;
-            });
-            setNews(filteredNews);
-        }
-    }, [selectedFilter]);
-
     return (
-        <LayoutWithSidebar sidebarElement={<Sidebar selectedFilter={selectedFilter} setSelectedFilter={handleSelectFilter} />}>
+        <LayoutWithSidebar sidebarElement={<Sidebar />}>
             <div className={styles.wrapper}>
                 {
-                    news.map((item) => {
+                    newsData.map((item) => {
                         return (
                             <NewsItem key={item.id} {...item} />
                         );

@@ -87,12 +87,16 @@ export const whitepaperData: TWhitePaper[] = [
         content: (
             <>
                 <h3>Why SideQuest</h3>
-                <p>
-                    We believe the SideQuest team has unparalleled access to gaming and social community in comparison to others.
-                </p>
-                <p>
-                    Users are the key, and we have the users
-                </p>
+                <div>
+                    <ul>
+                        <li>We believe the SideQuest team has unparalleled access to gaming and social community in
+                            comparison to others.
+                        </li>
+                        <li>
+                            Users are the key, and we have the users
+                        </li>
+                    </ul>
+                </div>
             </>
         ),
     },
