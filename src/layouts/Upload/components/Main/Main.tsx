@@ -10,7 +10,7 @@ const Main = () => {
             <div className={styles.content}>
                 <h1 className={styles.title}>Upload Your Profile Avatar</h1>
                 <p className={styles.description}>First impressions matter. What’s your style?</p>
-                <Link href='https://discord.gg/FJGW3eZ7vA' target={"_blank"} className={styles.link}>Back to the bot</Link>
+                <Link href='https://discord.gg/xbKhvmByvy' target={"_blank"} className={styles.link}>Back to the bot</Link>
             </div>
             <div className={styles.upload}>
                 <FileDropZone />

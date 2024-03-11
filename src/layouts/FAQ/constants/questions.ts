@@ -7,13 +7,13 @@ export type TQuestion = {
 export const questionsData: TQuestion[] = [
     {
         number: 1,
-        title: 'How does Sidekick`s escrow service work?',
+        title: 'How does SideQuest`s escrow service work?',
         content: 'It holds funds securely on the blockchain when you select a player to game with. After the gaming session, if both parties are satisfied, the funds are released to the player providing the service. If not, users can appeal for a refund within 48 hours',
     },
     {
         number: 2,
-        title: 'How can I integrate Sidekick into my Discord server?',
-        content: 'Integrating Sidekick into your Discord server is straightforward. Visit our website for detailed tutorials on how to add Sidekick to your server, enhancing your gaming experience with secure transactions and easy match-making',
+        title: 'How can I integrate SideQuest into my Discord server?',
+        content: 'Integrating SideQuest into your Discord server is straightforward. Visit our website for detailed tutorials on how to add SideQuest to your server, enhancing your gaming experience with secure transactions and easy match-making',
     },
     {
         number: 3,
@@ -27,12 +27,12 @@ export const questionsData: TQuestion[] = [
     },
     {
         number: 5,
-        title: 'Is my payment secure with Sidekick?',
+        title: 'Is my payment secure with SideQuest?',
         content: 'Absolutely. Our blockchain-based escrow service ensures that your payment is securely held until the gaming session is completed satisfactorily, offering a refund mechanism if the service is not provided as agreed',
     },
     {
         number: 6,
-        title: 'Can I remain anonymous using Sidekick?',
-        content: 'Yes, Sidekick values your privacy. Our platform is designed to keep your transactions anonymous - by creating an infrastructure free of traditional payments your profile remains secure from tracing',
+        title: 'Can I remain anonymous using SideQuest?',
+        content: 'Yes, SideQuest values your privacy. Our platform is designed to keep your transactions anonymous - by creating an infrastructure free of traditional payments your profile remains secure from tracing',
     },
 ];
