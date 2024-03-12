@@ -19,16 +19,16 @@ export const whitepaperData: TWhitePaper[] = [
           <>
             <h3>Introduction</h3>
             <p>
-              The past decade has witnessed increasing penetration of Web 3 as a result of its  nature of decentralization meeting specific user demands. For example, cross border payment; store of wealth in the context of currency depreciation and hyper inflation
+              The past decade has witnessed increasing penetration of Web 3 as a result of its  nature of decentralization meeting specific user demands. For example, cross border payment; store of wealth in the context of currency depreciation and hyper inflation.
             </p>
             <p>
-              Most Web 3 products today, however, are still far away from mass adoptions, as their abstract concepts and high learning cost fail to address specific pain points. For example crypto wallet with long addresses, high gas fees and network incompatibility; boring web 3 games that have no real players to play
+              Most Web 3 products today, however, are still far away from mass adoptions, as their abstract concepts and high learning cost fail to address specific pain points. For example crypto wallet with long addresses, high gas fees and network incompatibility; boring web 3 games that have no real players to play.
             </p>
             <p>
-              Our mission is to realize mass adoption of Web 3 through user-centric products. We aim to leverage the decentralized features of crypto to meet specific user demands and address specific user pain points, creating products with real product market fit
+              Our mission is to realize mass adoption of Web 3 through user-centric products. We aim to leverage the decentralized features of crypto to meet specific user demands and address specific user pain points, creating products with real product market fit.
             </p>
             <p>
-              We see gaming and social as our first segment to form our core user base. With that we are ready to expand into more markets
+              We see gaming and social as our first segment to form our core user base. With that we are ready to expand into more markets.
             </p>
           </>
       ),
@@ -76,7 +76,7 @@ export const whitepaperData: TWhitePaper[] = [
                 </ul>
               </div>
               <p>
-                In one words, we aim to serve and connect Community Enthusiasts, through whom we will serve and connect the whole gaming and social world
+                In one words, we aim to serve and connect Community Enthusiasts, through whom we will serve and connect the whole gaming and social world.
               </p>
             </>
         ),
@@ -90,7 +90,7 @@ export const whitepaperData: TWhitePaper[] = [
                 <div>
                     <ul>
                         <li>We believe the SideQuest team has unparalleled access to gaming and social community in
-                            comparison to others.
+                            comparison to others
                         </li>
                         <li>
                             Users are the key, and we have the users
@@ -129,7 +129,7 @@ export const whitepaperData: TWhitePaper[] = [
                     </ul>
                 </div>
                 <div>
-                    In our view, product development is an iterative process through constant interactions between product managers and the user community. We will provide update on our product plan periodically
+                    In our view, product development is an iterative process through constant interactions between product managers and the user community. We will provide update on our product plan periodically.
                 </div>
             </>
         ),
@@ -141,7 +141,7 @@ export const whitepaperData: TWhitePaper[] = [
             <>
                 <h3>Tokenomics</h3>
                 <div>
-                    Our tokenomics shall consists of three layers: fundamental, internal market， and external market
+                    Our tokenomics shall consists of three layers: fundamental, internal market, and external market:
                     <ul>
                         <li>
                             First layer: the fundamental layer is based on the operating incomes to be generated from the community ecosystem. We believe this is one of the primary differentiators of our tokenomics from a pure ponzi like model: the operating incomes generated based on real user values will provide solid fundamentals, especially during the downward cycles. Examples of such operating incomes include: a) commissions; b) subscription income; and c) ads monetization
@@ -155,7 +155,7 @@ export const whitepaperData: TWhitePaper[] = [
                     </ul>
                 </div>
                 <p>
-                    We will share update of our tokenomics periodically based on the feedback received from the community and the market trends
+                    We will share update of our tokenomics periodically based on the feedback received from the community and the market trends.
                 </p>
             </>
         ),
@@ -167,7 +167,7 @@ export const whitepaperData: TWhitePaper[] = [
             <>
                 <h3>Roadmap</h3>
                 <p>
-                    We have planned the roadmap of our project based on the aforementioned three layer tokenomics, with 1) phase 1: building the fundamentals; 2) phase 2: forming the internal market; and 3) phase 3: performing in the public market
+                    We have planned the roadmap of our project based on the aforementioned three layer tokenomics, with 1) phase 1: building the fundamentals; 2) phase 2: forming the internal market; and 3) phase 3: performing in the public market.
                 </p>
                 <div>
                     Phase 1: building the fundamentals:
