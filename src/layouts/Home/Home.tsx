@@ -11,15 +11,19 @@ import Team from '@/src/layouts/Home/sections/Team/Team';
 
 const Home = () => {
     return (
-        <MainContainer>
-            <Header />
+        <>
+            <MainContainer>
+                <Header />
+            </MainContainer>
             <Intro />
-            <Platforms />
-            <HowItWorks />
-            <Team />
-            <Contacts />
-            <Footer />
-        </MainContainer>
+            <MainContainer>
+                <Platforms />
+                <HowItWorks />
+                <Team />
+                <Contacts />
+                <Footer />
+            </MainContainer>
+        </>
     );
 };
 
