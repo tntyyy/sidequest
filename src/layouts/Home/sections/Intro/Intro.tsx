@@ -11,17 +11,19 @@ const Intro = () => {
     return (
         <div className={styles.container}>
             <main className={styles.intro}>
-                <div className={classNames(styles.gifWrapper, styles.gifWrapper__girl)}>
-                    <Image src={girlGif} alt={'girl'} className={styles.girl}/>
-                    <Image src={mushroom} alt={'mushroom'} className={styles.mushroom}/>
-                </div>
                 <div className={styles.wrapper}>
-                    <h1 className={styles.title}>Gaming, Social and Beyond</h1>
+                    <h1 className={styles.title}>Gaming, Social <br/> and Beyond</h1>
                     <p className={styles.description}>User-centric Products For Mass <br/> Adoption of Web 3</p>
                 </div>
-                <div className={classNames(styles.gifWrapper, styles.gifWrapper__boy)}>
-                    <Image src={boyGif} alt={'boy'} className={styles.boy}/>
-                    <Image src={coins} alt={'coins'} className={styles.coins}/>
+                <div className={styles.pictures}>
+                    <div className={classNames(styles.gifWrapper, styles.gifWrapper__girl)}>
+                        <Image src={girlGif} alt={'girl'} className={styles.girl}/>
+                        <Image src={mushroom} alt={'mushroom'} className={styles.mushroom}/>
+                    </div>
+                    <div className={classNames(styles.gifWrapper, styles.gifWrapper__boy)}>
+                        <Image src={boyGif} alt={'boy'} className={styles.boy}/>
+                        <Image src={coins} alt={'coins'} className={styles.coins}/>
+                    </div>
                 </div>
             </main>
         </div>

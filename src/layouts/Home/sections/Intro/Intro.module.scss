@@ -6,72 +6,63 @@
 
   overflow-x: visible;
 
-  margin: 0 auto;
   padding-top: 2rem;
+
+  margin: 10rem auto 12rem;
 
   @include media-breakpoint-down(xl) {
     max-width: unset;
     padding: 2rem 2rem 0;
   }
+
+  @include media-breakpoint-down(sm) {
+    margin: 4rem auto 12rem;
+  }
 }
 
 .intro {
   position: relative;
-
-  height: 71.6rem;
-
   display: flex;
   justify-content: space-between;
   align-items: center;
 
   overflow-x: visible;
 
-  gap: 6rem;
-
-  margin-bottom: 6rem;
+  gap: 4rem;
 
   @media (max-width: 1320px) {
-    height: unset;
-    align-items: center;
     flex-direction: column;
-    justify-content: flex-end;
-    gap: 4rem;
-    padding-top: 4rem;
-    margin-bottom: 15rem;
   }
 
   @include media-breakpoint-down(lg) {
-    align-items: center;
+    gap: 8rem;
+  }
+}
+
+.pictures {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+
+  @include media-breakpoint-down(lg) {
     flex-direction: column;
-    gap: 4rem;
-    padding-top: 4rem;
-    margin-bottom: 15rem;
   }
 }
 
 .gifWrapper__girl {
   @media (max-width: 1320px) {
-    order: 2;
-    align-self: flex-start;
-    margin-left: 15%;
   }
 
   @include media-breakpoint-down(sm) {
-    align-self: center;
-    margin-left: unset;
   }
 }
 
 .gifWrapper__boy {
   @media (max-width: 1320px) {
-    order: 3;
-    align-self: flex-end;
-    margin-right: 15%;
   }
 
   @include media-breakpoint-down(sm) {
-    align-self: center;
-    margin-right: unset;
+
   }
 }
 
@@ -81,15 +72,14 @@
 
 .mushroom {
   position: absolute;
-  top: -10rem;
-  right: -8rem;
+  top: -6rem;
+  left: -10rem;
   z-index: 3;
-
 }
 
 .coins {
   position: absolute;
-  right: -6rem;
+  right: -2rem;
   bottom: -14rem;
   z-index: 3;
 }
@@ -126,10 +116,15 @@
 .wrapper {
   display: flex;
   flex-direction: column;
-  gap: 1.4rem;
+  align-self: flex-end;
+  gap: 4rem;
   z-index: 2;
 
   @media (max-width: 1320px) {
-    order: 1;
+    align-self: center;
+
+    br {
+      display: none;
+    }
   }
 }
