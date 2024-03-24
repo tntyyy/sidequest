@@ -23,13 +23,10 @@ const TimePicker: React.FC<TimePickerProps> = ({ onTimeChange }) => {
 
     const handleTimeChange = (event: React.ChangeEvent<HTMLInputElement>) => {
         let { value } = event.target;
-        // Ограничиваем ввод только цифрами и двоеточием
         value = value.replace(/[^\d:]/g, '');
-        // Ограничиваем максимальную длину
         if (value.length > 5) {
             value = value.slice(0, 5);
         }
-        // Автоматически добавляем двоеточие после двух введённых цифр для часов
         if (value.length === 2 && !value.includes(':')) {
             value += ':';
         }

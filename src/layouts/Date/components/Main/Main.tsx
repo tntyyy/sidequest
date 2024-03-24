@@ -6,6 +6,8 @@ import DatePicker from '@/src/components/DatePicker/DatePicker';
 import {useEffect, useState} from 'react';
 import TimePicker from '@/src/components/TimePicker/TimePicker';
 import {useRouter} from 'next/router';
+import success from '../../../../../public/assets/icons/success.png';
+import error from '../../../../../public/assets/icons/error.png';
 
 export type Value = Date | null;
 
@@ -27,6 +29,8 @@ const formatDateAndTime = (dateString: Date, timeString: string): string => {
 const Main = () => {
     const router = useRouter();
     const [userIds, setUserIds] = useState<string[]>([]);
+
+    const [isSuccessResponse, setIsSuccessResponse] = useState<boolean | null>(null);
 
     const [selectedDate, setSelectedDate] = useState<Value>(new Date());
 
@@ -59,13 +63,12 @@ const Main = () => {
                 },
                 body: JSON.stringify({ date: date }),
             });
-            if (!response.ok) {
-                throw new Error('Network response was not ok');
+
+            if (response.ok) {
+                setIsSuccessResponse(true);
             }
-            // Обработка успешного ответа
         } catch (error) {
-            // Обработка ошибок
-            console.error('There was a problem with the fetch operation:', error);
+            setIsSuccessResponse(false);
         }
     };
 
@@ -78,14 +81,26 @@ const Main = () => {
                 </p>
                 <Link href='https://linktr.ee/SideQuestProject' target={"_blank"} className={styles.link}>Back to the bot</Link>
             </div>
-            <div className={styles.calendar}>
-                <DatePicker
-                    date={selectedDate}
-                    setDate={handleChangeSelectedDate}
-                />
-                <TimePicker onTimeChange={handleSubmit} />
-            </div>
-            <Image src={pixelArrow} alt={'Pixel arrow'} className={styles.icon} />
+            {isSuccessResponse !== null && (
+                <div className={styles.state}>
+                    <Image src={isSuccessResponse ? success : error} alt={'SideQuest'} className={styles.state__icon} />
+                    <p className={styles.text}>
+                        {
+                            isSuccessResponse ? 'The date has been successfully selected' : 'An unexpected error has occurred'
+                        }
+                    </p>
+                </div>
+            )}
+            {isSuccessResponse === null && (
+                <div className={styles.calendar}>
+                    <DatePicker
+                        date={selectedDate}
+                        setDate={handleChangeSelectedDate}
+                    />
+                    <TimePicker onTimeChange={handleSubmit}/>
+                </div>
+            )}
+            <Image src={pixelArrow} alt={'Pixel arrow'} className={styles.icon}/>
         </main>
     );
 };

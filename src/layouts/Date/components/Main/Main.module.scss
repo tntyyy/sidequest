@@ -125,10 +125,33 @@
 .icon {
   position: absolute;
 
-  top: 0;
+  top: -8rem;
   left: 30rem;
+
+  width: 402px;
+  height: 411px;
 
   @media (max-width: 1200px) {
     display: none;
   }
+}
+
+.state {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  justify-content: center;
+  align-items: center;
+
+  background: #1F1F1F;
+  color: #FFFFFF;
+  border-radius: 16px;
+  font-family: var(--font-mont);
+  border: 1px solid #393939;
+
+  width: 100%;
+  max-width: 42.7rem;
+
+  padding: 8rem 0;
 }
